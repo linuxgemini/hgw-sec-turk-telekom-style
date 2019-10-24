@@ -53,66 +53,67 @@ After I fixed my bridge I saw an unusual exchange, an unencrypted HTTP/XML data 
 63 XML packets went through and this is most interesting one.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cwmp="urn:dslforum-org:cwmp-1-0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<SOAP-ENV:Header>
-<cwmp:HoldRequests SOAP-ENV:mustUnderstand="1">0</cwmp:HoldRequests>
-<cwmp:ID SOAP-ENV:mustUnderstand="1">5</cwmp:ID>
-</SOAP-ENV:Header>
-<SOAP-ENV:Body>
-<cwmp:SetParameterValues>
-<ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[12]">
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.1.Enable</Name>
-<Value xsi:type="xsd:boolean">1</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.1.Username</Name>
-<Value xsi:type="xsd:string">Tekniker</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.1.Password</Name>
-<Value xsi:type="xsd:string">Teknik_br04</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.1.X_000261_AccessLevel</Name>
-<Value xsi:type="xsd:string">Administrator</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.2.Enable</Name>
-<Value xsi:type="xsd:boolean">1</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.2.Username</Name>
-<Value xsi:type="xsd:string">admin</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.2.Password</Name>
-<Value xsi:type="xsd:string">admin</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.2.X_000261_AccessLevel</Name>
-<Value xsi:type="xsd:string">User</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.3.Enable</Name>
-<Value xsi:type="xsd:boolean">1</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.3.Username</Name>
-<Value xsi:type="xsd:string">root</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.3.Password</Name>
-<Value xsi:type="xsd:string">fTTh_b2013</Value>
-</ParameterValueStruct>
-<ParameterValueStruct>
-<Name>InternetGatewayDevice.User.3.X_000261_AccessLevel</Name>
-<Value xsi:type="xsd:string">Maintainer</Value>
-</ParameterValueStruct>
-</ParameterList>
-<ParameterKey/>
-</cwmp:SetParameterValues>
-</SOAP-ENV:Body>
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cwmp="urn:dslforum-org:cwmp-1-0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <SOAP-ENV:Header>
+        <cwmp:HoldRequests SOAP-ENV:mustUnderstand="1">0</cwmp:HoldRequests>
+        <cwmp:ID SOAP-ENV:mustUnderstand="1">5</cwmp:ID>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <cwmp:SetParameterValues>
+            <ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[12]">
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.1.Enable</Name>
+                    <Value xsi:type="xsd:boolean">1</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.1.Username</Name>
+                    <Value xsi:type="xsd:string">Tekniker</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.1.Password</Name>
+                    <Value xsi:type="xsd:string">Teknik_br04</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.1.X_000261_AccessLevel</Name>
+                    <Value xsi:type="xsd:string">Administrator</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.2.Enable</Name>
+                    <Value xsi:type="xsd:boolean">1</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.2.Username</Name>
+                    <Value xsi:type="xsd:string">admin</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.2.Password</Name>
+                    <Value xsi:type="xsd:string">admin</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.2.X_000261_AccessLevel</Name>
+                    <Value xsi:type="xsd:string">User</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.3.Enable</Name>
+                    <Value xsi:type="xsd:boolean">1</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.3.Username</Name>
+                    <Value xsi:type="xsd:string">root</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.3.Password</Name>
+                    <Value xsi:type="xsd:string">fTTh_b2013</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.User.3.X_000261_AccessLevel</Name>
+                    <Value xsi:type="xsd:string">Maintainer</Value>
+                </ParameterValueStruct>
+            </ParameterList>
+            <ParameterKey />
+        </cwmp:SetParameterValues>
+    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
 
